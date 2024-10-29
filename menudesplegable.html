@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de navegación con listas</title>
+    <style>
+        body {
+            font-family: arial, helvetica;
+            background: #e8e8e8;
+        }
+
+        .menu {
+            padding: 0;
+            background: #092327;
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            list-style: none;
+        }
+
+        .menu li {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+            display: block;
+        }
+
+        .menu li a:hover {
+            background: #ef8354;
+        }
+
+        /* Estilo para los submenús */
+        .menu ul {
+            display: none;
+            position: absolute;
+            background-color: #092327;
+            padding: 0;
+            list-style: none;
+            top: 100%;
+            left: 0;
+        }
+
+        .menu ul li {
+            display: block;
+            text-align: left;
+        }
+
+        .menu ul li a {
+            padding: 15px;
+        }
+
+        /* Mostrar submenú al hacer hover sobre el elemento padre */
+        .menu li:hover > ul {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+   
+        <li>
+            <a href="#">MENÚ</a>
+            <ul>
+                <li><a href="https://h1av.github.io/index/">Pagina 1</a></li>
+                <li><a href="https://h1av.github.io/Mipagina4/">Pagina 2</a></li>
+                <li><a href="https://h1av.github.io/Mipagina5/">Pagina 3</a></li>
+            </ul>
+        </li>
+       
+    </ul>
+</body>
+</html>
